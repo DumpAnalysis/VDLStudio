@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE.md). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VDL Studio — Dia|gram Diagnostic Analysis Language Editor</title>
+<link rel="stylesheet" href="css/studio.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ===== Top toolbar ===== -->
+  <header id="topbar">
+    <div class="brand" title="Visual Dia|gram Language Studio">VDL<span>Studio</span></div>
+
+    <div class="tb-group">
+      <button id="btnNewProject" title="New project">New</button>
+      <button id="btnOpen" title="Open project or diagram (Ctrl+O)">Open…</button>
+      <button id="btnSave" title="Save project (Ctrl+S)">Save</button>
+      <button id="btnSaveAs" title="Save project as… (Ctrl+Shift+S)">Save as…</button>
+      <button id="btnSaveDiagram" title="Save only the current diagram as a .vdl.json file">Save diagram…</button>
+    </div>
+
+    <div class="tb-group">
+      <button id="btnUndo" title="Undo (Ctrl+Z)">↶</button>
+      <button id="btnRedo" title="Redo (Ctrl+Y)">↷</button>
+    </div>
+
+    <div class="tb-group">
+      <button id="btnExportSVG" title="Export current diagram as SVG (Ctrl+E)">SVG</button>
+      <button id="btnExportPNG" title="Export current diagram as PNG (Ctrl+Shift+E)">PNG</button>
+      <button id="btnExportAll" title="Export every diagram in the project as a ZIP of SVG/PNG files">Export all…</button>
+      <button id="btnCopySVG" title="Copy the current diagram's SVG markup to the clipboard">Copy SVG</button>
+    </div>
+
+    <div class="tb-group">
+      <button id="btnZoomOut" title="Zoom out (-)">−</button>
+      <span id="zoomLabel" title="Click to reset to 100%">100%</span>
+      <button id="btnZoomIn" title="Zoom in (+)">+</button>
+      <button id="btnZoomFit" title="Fit page in view (0)">Fit</button>
+      <label class="chk" title="Snap positions and sizes to the grid (hold Alt to bypass)"><input type="checkbox" id="chkSnap" checked> Snap</label>
+      <label class="chk" title="Show grid"><input type="checkbox" id="chkGrid" checked> Grid</label>
+      <label class="chk" title="Show reference images (book figures used for tracing)"><input type="checkbox" id="chkRefs" checked> Refs</label>
+    </div>
+
+    <div class="tb-group right">
+      <button id="btnPage" title="Page size, grid and diagram settings">Page…</button>
+      <button id="btnHelp" title="Keyboard shortcuts and help (F1)">?</button>
+    </div>
+  </header>
+
+  <!-- ===== Left column: palette + diagrams ===== -->
+  <aside id="left">
+    <section class="panel" id="palettePanel">
+      <h3>Tools</h3>
+      <div class="tools" id="tools"></div>
+    </section>
+    <section class="panel grow" id="diagramsPanel">
+      <h3>Diagrams <span id="diagramCount" class="muted"></span></h3>
+      <div class="row">
+        <input type="search" id="diagramFilter" placeholder="Filter diagrams…">
+      </div>
+      <div class="row btns">
+        <button id="btnDiagramNew" title="Add a blank diagram">New</button>
+        <button id="btnDiagramFromPattern" title="Add a diagram for a pattern from the book catalog (with its figure as a tracing reference)">From pattern…</button>
+        <button id="btnDiagramDup" title="Duplicate the current diagram">Dup</button>
+        <button id="btnDiagramDel" title="Delete the current diagram">Del</button>
+      </div>
+      <div id="diagramList" class="list"></div>
+    </section>
+  </aside>
+
+  <!-- ===== Canvas ===== -->
+  <main id="center">
+    <div id="canvasWrap">
+      <svg id="canvas" xmlns="http://www.w3.org/2000/svg" tabindex="0">
+        <defs id="canvasDefs"></defs>
+        <g id="viewport">
+          <rect id="pageRect" x="0" y="0" width="960" height="720" fill="#ffffff"/>
+          <g id="gridLayer"></g>
+          <g id="content"></g>
+          <g id="overlay"></g>
+        </g>
+      </svg>
+      <div id="textEditor" class="hidden"><textarea spellcheck="false"></textarea></div>
+    </div>
+    <footer id="statusbar">
+      <span id="statusTool">Select</span>
+      <span id="statusPos"></span>
+      <span id="statusSel"></span>
+      <span id="statusHint" class="grow"></span>
+      <span id="statusSaved"></span>
+    </footer>
+  </main>
+
+  <!-- ===== Right column: properties + layers ===== -->
+  <aside id="right">
+    <section class="panel" id="propsPanel">
+      <h3 id="propsTitle">Properties</h3>
+      <div id="props"></div>
+    </section>
+    <section class="panel grow" id="layersPanel">
+      <h3>Layers</h3>
+      <div class="row btns">
+        <button id="btnLayerTop" title="Bring to front (Ctrl+Shift+])">⤒</button>
+        <button id="btnLayerUp" title="Bring forward (Ctrl+])">↑</button>
+        <button id="btnLayerDown" title="Send backward (Ctrl+[)">↓</button>
+        <button id="btnLayerBottom" title="Send to back (Ctrl+Shift+[)">⤓</button>
+        <button id="btnGroup" title="Group (Ctrl+G)">Group</button>
+        <button id="btnUngroup" title="Ungroup (Ctrl+Shift+G)">Ungroup</button>
+      </div>
+      <div class="row btns">
+        <button id="btnAlignL" title="Align left edges">⫷</button>
+        <button id="btnAlignC" title="Align horizontal centers">≡</button>
+        <button id="btnAlignR" title="Align right edges">⫸</button>
+        <button id="btnAlignT" title="Align top edges">⤒</button>
+        <button id="btnAlignM" title="Align vertical middles">☰</button>
+        <button id="btnAlignB" title="Align bottom edges">⤓</button>
+        <button id="btnDistH" title="Distribute horizontally">↔</button>
+        <button id="btnDistV" title="Distribute vertically">↕</button>
+      </div>
+      <div id="layerList" class="list"></div>
+    </section>
+  </aside>
+</div>
+
+<!-- ===== Modal dialogs ===== -->
+<div id="modal" class="hidden">
+  <div class="modal-box">
+    <div class="modal-head"><span id="modalTitle"></span><button id="modalClose">×</button></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<input type="file" id="fileInput" class="hidden" accept=".json,.vdl,.vdlp,.svg">
+<input type="file" id="imageInput" class="hidden" accept="image/*">
+
+<script src="js/palette.js"></script>
+<script src="js/catalog.js"></script>
+<script src="js/model.js"></script>
+<script src="js/render.js"></script>
+<script src="js/export.js"></script>
+<script src="js/templates.js"></script>
+<script src="js/editor.js"></script>
+</body>
+</html>
