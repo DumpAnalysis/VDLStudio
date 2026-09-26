@@ -5,8 +5,8 @@ analysis language used throughout the book
 [*Trace, Log, Text, Narrative, Data: An Analysis Pattern Reference for Information Mining, Diagnostics, Anomaly Detection*, Fifth Edition](https://www.dumpanalysis.org/trace-log-analysis-pattern-reference)
 by Dmitry Vostokov, Software Diagnostics Institute (OpenTask, 2023, ISBN 978-1-912636-58-7) — time
 axes, traces with message rows and attribute columns, message blocks, annotations, arrows, graphs.
-Book page: <https://www.dumpanalysis.org/trace-log-analysis-pattern-reference> ·
-Dia|gram language: <https://www.dumpanalysis.org/diagram-diagnostic-analysis-language>.
+The Dia|gram language itself is described at
+<https://www.dumpanalysis.org/diagram-diagnostic-analysis-language>.
 
 No installation, no server, no external libraries: open `VDLStudio.html` in Chrome or Edge
 (Firefox works too, but saves fall back to downloads).
