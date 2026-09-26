@@ -1214,7 +1214,7 @@
   }
   function showHelp() {
     showModal('VDL Studio — help', `
-      <p><b>VDL Studio</b> draws Dia|gram figures (the graphical diagnostic analysis language used in <i>Trace Analysis Pattern Reference</i>): time axes, traces with message rows and columns, message blocks, annotations, arrows and graphs.</p>
+      <p><b>VDL Studio</b> draws Dia|gram figures — the graphical diagnostic analysis language used in the book <a href="https://www.dumpanalysis.org/trace-log-analysis-pattern-reference" target="_blank" rel="noopener"><i>Trace, Log, Text, Narrative, Data: An Analysis Pattern Reference for Information Mining, Diagnostics, Anomaly Detection</i>, Fifth Edition</a>: time axes, traces with message rows and columns, message blocks, annotations, arrows and graphs.</p>
       <h4>Drawing</h4>
       <p>Pick a tool and drag on the page; a plain click inserts the default size. Message blocks dropped inside a trace take the trace's width, inherit its row texture and column lines, and move with it. Hold <kbd>Alt</kbd> to bypass snapping, <kbd>Shift</kbd> to constrain. Line tools: drag for a two-point arrow, or click-click-click and finish with <kbd>Enter</kbd> / double-click (<kbd>Esc</kbd> cancels). Double-click a line to add a vertex.</p>
       <h4>Text</h4>

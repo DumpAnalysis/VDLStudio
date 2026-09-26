@@ -145,7 +145,7 @@ const VDLTemplates = (() => {
   // Build a project with one diagram per figure of the book, each carrying that figure as a locked
   // tracing reference (loaded from reference/<file>, which sits next to VDLStudio.html).
   function buildBookProject() {
-    const proj = VDL.newProject('Trace Analysis Pattern Reference — Dia|gram figures');
+    const proj = VDL.newProject('Trace, Log, Text, Narrative, Data (5th ed.) — Dia|gram figures');
     proj.diagrams = [];
     const pageW = VDL_DEFAULT_PAGE.width, pageH = VDL_DEFAULT_PAGE.height, margin = 20;
     VDL_CATALOG.forEach(entry => {

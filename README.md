@@ -1,8 +1,12 @@
 # VDL Studio — Visual Dia|gram Language editor
 
 A single-page, offline editor for drawing **Dia|gram** figures — the graphical diagnostic
-analysis language used throughout *Trace Analysis Pattern Reference* (time axes, traces with
-message rows and attribute columns, message blocks, annotations, arrows, graphs).
+analysis language used throughout the book
+[*Trace, Log, Text, Narrative, Data: An Analysis Pattern Reference for Information Mining, Diagnostics, Anomaly Detection*, Fifth Edition](https://www.dumpanalysis.org/trace-log-analysis-pattern-reference)
+by Dmitry Vostokov, Software Diagnostics Institute (OpenTask, 2023, ISBN 978-1-912636-58-7) — time
+axes, traces with message rows and attribute columns, message blocks, annotations, arrows, graphs.
+Book page: <https://www.dumpanalysis.org/trace-log-analysis-pattern-reference> ·
+Dia|gram language: <https://www.dumpanalysis.org/diagram-diagnostic-analysis-language>.
 
 No installation, no server, no external libraries: open `VDLStudio.html` in Chrome or Edge
 (Firefox works too, but saves fall back to downloads).
@@ -29,7 +33,7 @@ VDLStudio/
 
 The editor opens the **book project**: a work plan for redrawing the book's figures, not a
 set of finished diagrams. The list at the bottom left has one entry per figure of the Fifth
-Edition (271 figures across 231 patterns; a pattern with several figures gets numbered entries,
+Edition of [the book](https://www.dumpanalysis.org/trace-log-analysis-pattern-reference) (271 figures across 231 patterns; a pattern with several figures gets numbered entries,
 e.g. *Adjoint Space (1)…(3)*) plus one empty entry for each of the 24 patterns that have no
 figure — 296 entries in all.
 
@@ -176,8 +180,8 @@ were 960 × 720 px slides).
 
 ## License
 
-Copyright © 2026 Dmitry Vostokov. VDL Studio — the editor, its documentation and the book
-figures in `reference/` and `samples/` — is licensed under the
+Copyright © 2026 Dmitry Vostokov. VDL Studio — the editor, its documentation and the figures in
+`reference/` and `samples/`, which come from [*Trace, Log, Text, Narrative, Data: An Analysis Pattern Reference for Information Mining, Diagnostics, Anomaly Detection*, Fifth Edition](https://www.dumpanalysis.org/trace-log-analysis-pattern-reference) — is licensed under the
 [PolyForm Noncommercial License 1.0.0](LICENSE.md): you may use, modify and share it for
 personal and other noncommercial purposes, keeping the licence and the copyright notice with
 every copy. Any commercial use requires a separate licence from the author.

@@ -1,8 +1,10 @@
 Required Notice: Copyright © 2026 Dmitry Vostokov (https://www.dumpanalysis.org)
 
 VDL Studio — the editor (VDLStudio.html, css/, js/), its documentation, and the
-figures in reference/ and samples/ (taken from "Trace Analysis Pattern Reference,
-Fifth Edition" by Dmitry Vostokov) — is made available under the PolyForm
+figures in reference/ and samples/ (taken from the book "Trace, Log, Text, Narrative, Data: An Analysis Pattern Reference for Information Mining, Diagnostics, Anomaly Detection,
+Fifth Edition" by Dmitry Vostokov, Software Diagnostics Institute — OpenTask, 2023,
+ISBN 978-1-912636-58-7, https://www.dumpanalysis.org/trace-log-analysis-pattern-reference) — is made
+available under the PolyForm
 Noncommercial License 1.0.0 reproduced below. SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
 In short: personal and other noncommercial use, modification and redistribution
