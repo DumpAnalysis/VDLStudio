@@ -1,4 +1,4 @@
-// VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE.md).
+// VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Strict License 1.0.0 — noncommercial use, no redistribution, no derivative works (see LICENSE.md).
 // VDL Studio — SVG renderer shared by the editor canvas and the SVG/PNG exporters.
 // Everything is rendered with presentation attributes (no CSS classes) so that the exported
 // SVG is fully self-contained.

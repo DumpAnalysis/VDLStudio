@@ -1,4 +1,4 @@
-// VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE.md).
+// VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Strict License 1.0.0 — noncommercial use, no redistribution, no derivative works (see LICENSE.md).
 // VDL Studio — document model: element types, defaults, property schemas, geometry helpers.
 // A diagram ("doc") is { version, name, pattern, page:{width,height,grid,background}, elements:[...] }.
 // Every element has: id, type, name?, locked?, hidden?, plus type-specific properties.

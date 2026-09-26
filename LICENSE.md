@@ -1,21 +1,22 @@
-Required Notice: Copyright © 2026 Dmitry Vostokov (https://www.dumpanalysis.org)
+Copyright © 2026 Dmitry Vostokov (https://www.dumpanalysis.org). All rights reserved
+except as granted below.
 
 VDL Studio — the editor (VDLStudio.html, css/, js/), its documentation, and the
 figures in reference/ and samples/ (taken from the book "Trace, Log, Text, Narrative, Data: An Analysis Pattern Reference for Information Mining, Diagnostics, Anomaly Detection,
 Fifth Edition" by Dmitry Vostokov, Software Diagnostics Institute — OpenTask, 2023,
 ISBN 978-1-912636-58-7, https://www.dumpanalysis.org/trace-log-analysis-pattern-reference) — is made
-available under the PolyForm
-Noncommercial License 1.0.0 reproduced below. SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+available under the PolyForm Strict License 1.0.0 reproduced below.
 
-In short: personal and other noncommercial use, modification and redistribution
-are permitted provided these terms and the Required Notice line above accompany
-every copy; any commercial use requires a separate license from the author.
+In short: you may download and use it for personal and other noncommercial
+purposes. You may not distribute copies of it, and you may not make changes or
+derivative works based on it. Any other use, including any commercial use,
+requires a separate license from the author.
 
 -----------------------------------------------------------------------------
 
-# PolyForm Noncommercial License 1.0.0
+# PolyForm Strict License 1.0.0
 
-<https://polyformproject.org/licenses/noncommercial/1.0.0>
+<https://polyformproject.org/licenses/strict/1.0.0>
 
 ## Acceptance
 
@@ -28,35 +29,9 @@ your licenses.
 The licensor grants you a copyright license for the
 software to do everything you might do with the software
 that would otherwise infringe the licensor's copyright
-in it for any permitted purpose.  However, you may
-only distribute the software according to [Distribution
-License](#distribution-license) and make changes or new works
-based on the software according to [Changes and New Works
-License](#changes-and-new-works-license).
-
-## Distribution License
-
-The licensor grants you an additional copyright license
-to distribute copies of the software.  Your license
-to distribute covers distributing the software with
-changes and new works permitted by [Changes and New Works
-License](#changes-and-new-works-license).
-
-## Notices
-
-You must ensure that anyone who gets a copy of any part of
-the software from you also gets a copy of these terms or the
-URL for them above, as well as copies of any plain-text lines
-beginning with `Required Notice:` that the licensor provided
-with the software.  For example:
-
-> Required Notice: Copyright Yoyodyne, Inc. (http://example.com)
-
-## Changes and New Works License
-
-The licensor grants you an additional copyright license to
-make changes and new works based on the software for any
-permitted purpose.
+in it for any permitted purpose, other than distributing
+the software or making changes or new works based on the
+software.
 
 ## Patent License
 

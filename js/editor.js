@@ -1,4 +1,4 @@
-// VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE.md).
+// VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Strict License 1.0.0 — noncommercial use, no redistribution, no derivative works (see LICENSE.md).
 // VDL Studio — the interactive editor (canvas interaction, panels, files, keyboard).
 (() => {
   'use strict';
@@ -1230,7 +1230,7 @@
         <tr><td>Tool keys: <kbd>T</kbd> trace · <kbd>B</kbd> block · <kbd>M</kbd> message · <kbd>A</kbd> time axis · <kbd>R</kbd> rectangle · <kbd>E</kbd> ellipse · <kbd>X</kbd> text · <kbd>L</kbd> arrow · <kbd>C</kbd> elbow · <kbd>N</kbd> note</td></tr>
       </table>
       <p class="muted">Dia|gram: <a href="https://www.dumpanalysis.org/diagram-diagnostic-analysis-language" target="_blank" rel="noopener">dumpanalysis.org</a></p>
-      <p class="muted">VDL Studio © 2026 Dmitry Vostokov — PolyForm Noncommercial License 1.0.0 (personal and other noncommercial use; see LICENSE.md).</p>`);
+      <p class="muted">VDL Studio © 2026 Dmitry Vostokov — PolyForm Strict License 1.0.0 (personal and other noncommercial use; no redistribution or derivative works; see LICENSE.md).</p>`);
   }
 
   // ------------------------------------------------------------------ keyboard

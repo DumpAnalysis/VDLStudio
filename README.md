@@ -182,6 +182,6 @@ were 960 × 720 px slides).
 
 Copyright © 2026 Dmitry Vostokov. VDL Studio — the editor, its documentation and the figures in
 `reference/` and `samples/`, which come from [*Trace, Log, Text, Narrative, Data: An Analysis Pattern Reference for Information Mining, Diagnostics, Anomaly Detection*, Fifth Edition](https://www.dumpanalysis.org/trace-log-analysis-pattern-reference) — is licensed under the
-[PolyForm Noncommercial License 1.0.0](LICENSE.md): you may use, modify and share it for
-personal and other noncommercial purposes, keeping the licence and the copyright notice with
-every copy. Any commercial use requires a separate licence from the author.
+[PolyForm Strict License 1.0.0](LICENSE.md): you may download and use it for personal and other
+noncommercial purposes; you may not redistribute it or make changes or derivative works based on
+it. Any other use, including commercial use, requires a separate licence from the author.

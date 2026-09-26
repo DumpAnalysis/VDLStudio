@@ -1,4 +1,4 @@
-// VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Noncommercial License 1.0.0 (see LICENSE.md).
+// VDL Studio — Copyright © 2026 Dmitry Vostokov. Licensed under the PolyForm Strict License 1.0.0 — noncommercial use, no redistribution, no derivative works (see LICENSE.md).
 // VDL Studio — colour palette.
 // The book's diagrams were drawn with the Office "standard colours" plus a few tints,
 // so the palette reproduces those values exactly (sampled from the Fifth Edition figures).
