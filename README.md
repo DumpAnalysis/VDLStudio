@@ -37,7 +37,7 @@ Edition of [the book](https://www.dumpanalysis.org/trace-log-analysis-pattern-re
 e.g. *Adjoint Space (1)…(3)*) plus one empty entry for each of the 24 patterns that have no
 figure — 296 entries in all.
 
-Each entry carries the original figure, extracted from the DOCX, as a locked, half-transparent
+Each entry carries the original figure from the book as a locked, half-transparent
 **reference** underlay. Draw the Dia|gram elements over it, untick *Refs* in the toolbar to
 check the result, then export — references are never exported. Three entries (*Activity
 Region*, *Blackout*, *Activity Packet*) already contain reconstructions made this way; the
